@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+
+
+  <script>
+    // 캔버스 요소 가져오기 (필수)
+    let canvas = document.getElementById('myCanvas');
+    let context = canvas.getContext('2d');
+
+    // 이미지 생성
+    let image = document.createElement('img') //이미지 태그 만들기
+    // let image = new Image(); //이미지 만들기
+
+    image.src='https://cdn.pixabay.com/photo/2023/06/18/18/05/rose-8072535_1280.jpg'
+
+    context.drawImage(image,0,0,400,400);
+  </script>
+  
+</body>
+</html>
